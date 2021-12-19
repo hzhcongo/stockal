@@ -22,6 +22,7 @@ import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import Copyright from './Copyright';
+import SearchBar from './SearchBar';
 
 const drawerWidth: number = 240;
 
@@ -105,18 +106,14 @@ function DashboardContent() {
             </IconButton>
             <Typography
               component="h1"
-              variant="h6"
+              variant="h4"
               color="inherit"
               noWrap
-              sx={{ flexGrow: 1 }}
+              sx={{ width: 300 }}
             >
-              Dashboard
+              Stockal
             </Typography>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            <SearchBar/>
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
